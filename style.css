@@ -77,3 +77,11 @@ section > h1 {
 h1 {
   color: #000000;
 }
+
+.social > a {
+  target: _blank;
+}
+
+.social {
+  display: inline;
+}
