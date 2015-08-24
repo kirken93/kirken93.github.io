@@ -1,9 +1,10 @@
-<script language="javascript" type="text/javascript">
-  function myAge(birthday) {
-    var ageDifMs = Date.now() - birthday.getTime();
-    var ageDate = new Date(ageDifMs);
-    return Math.abs(ageDate.getUTCFullYear() - 1970);
-  }
+function myAge() {
+  var birthday = new Date(1993,7,9).getTime();
+  var age = document.getElementById("age");
 
-  document.getElementById("age").innerHTML = myAge('07-09-1993');
-</script>
+  var current_date = new Date().getTime();
+  var seconds_since = (current_date - birthday) / 1000;
+
+  var years = (seconds_since / 31536000).toFixed(5);
+  age.innerHTML = years;
+}
