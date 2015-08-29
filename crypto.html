@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <title>
+      Cryptography
+    </title>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <header class="masthead">
+      <p class="masthead-intro">Here's some</p>
+      <h1 class="masthead-heading">Crypto!</h1>
+    </header>
+    <section class="introduction-section">
+      <h1>Cryptography</h1>
+      <p id="crypto-text">Here's some cryptography text that you can translate.</p>
+      <p id ="shift"></p>
+      <p id="affine"></p>
+    </section>
+    <footer class="content-footer">
+    </footer>
+    <script type="text/javascript">
+      document.getElementById("shift").innerHTML = shiftCipher(true, document.getElementById("crypto-text").innerHTML, 5);
+      //affineCipher(true, "Here's some cyrptography text that you can translate.", 11, 8);
+    </script>
+  </body>
+</html>
